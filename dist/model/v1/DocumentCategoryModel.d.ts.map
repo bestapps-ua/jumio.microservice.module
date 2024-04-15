@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentCategoryModel.d.ts","sourceRoot":"","sources":["../../../src/model/v1/DocumentCategoryModel.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,eAAe,CAAC;AAExC,OAAO,mBAAmB,MAAM,qCAAqC,CAAC;AAEtE,cAAM,qBAAsB,SAAQ,WAAW;gBAC/B,KAAK,GAAE,mBAAwB;CAI9C;AAED,eAAe,qBAAqB,CAAC"}

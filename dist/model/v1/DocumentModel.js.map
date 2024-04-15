@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentModel.js","sourceRoot":"","sources":["../../../src/model/v1/DocumentModel.ts"],"names":[],"mappings":";;;;;AAAA,gEAAwC;AACxC,kFAA0D;AAG1D,MAAM,aAAc,SAAQ,qBAAW;IACnC,YAAY,QAA6B,EAAE;;QACvC,KAAK,CAAC,KAAK,GAAG,MAAA,KAAK,CAAC,KAAK,mCAAI,0BAAgB,CAAC;QAC9C,KAAK,CAAC,KAAK,CAAC,CAAC;IACjB,CAAC;CACJ;AAED,kBAAe,aAAa,CAAC"}

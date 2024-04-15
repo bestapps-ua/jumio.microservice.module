@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentCategoryModel.js","sourceRoot":"","sources":["../../../src/model/v1/DocumentCategoryModel.ts"],"names":[],"mappings":";;;;;AAAA,gEAAwC;AACxC,kGAA0E;AAG1E,MAAM,qBAAsB,SAAQ,qBAAW;IAC3C,YAAY,QAA6B,EAAE;;QACvC,KAAK,CAAC,KAAK,GAAG,MAAA,KAAK,CAAC,KAAK,mCAAI,kCAAwB,CAAC;QACtD,KAAK,CAAC,KAAK,CAAC,CAAC;IACjB,CAAC;CACJ;AAED,kBAAe,qBAAqB,CAAC"}

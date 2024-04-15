@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentNumberModel.js","sourceRoot":"","sources":["../../../src/model/v1/DocumentNumberModel.ts"],"names":[],"mappings":";;;;;AAAA,gEAAwC;AACxC,8FAAsE;AAGtE,MAAM,mBAAoB,SAAQ,qBAAW;IACzC,YAAY,QAA6B,EAAE;;QACvC,KAAK,CAAC,KAAK,GAAG,MAAA,KAAK,CAAC,KAAK,mCAAI,gCAAsB,CAAC;QACpD,KAAK,CAAC,KAAK,CAAC,CAAC;IACjB,CAAC;CACJ;AAED,kBAAe,mBAAmB,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"DocumentUserModel.d.ts","sourceRoot":"","sources":["../../../src/model/v1/DocumentUserModel.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,eAAe,CAAC;AAExC,OAAO,mBAAmB,MAAM,qCAAqC,CAAC;AAEtE,cAAM,iBAAkB,SAAQ,WAAW;gBAC3B,KAAK,GAAE,mBAAwB;CAI9C;AAED,eAAe,iBAAiB,CAAC"}
