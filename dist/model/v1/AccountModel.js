@@ -15,31 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const EntityModel_1 = __importDefault(require("./EntityModel"));
 const ApiAccount_1 = __importDefault(require("../../entity/api/v1/ApiAccount"));
 const APIAccountModel_1 = __importDefault(require("../api/v1/APIAccountModel"));
-/**
- * let data: any = {
- *             mode: 'sandbox',
- *             region: 'US',
- *             userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15',
- *             customerInternalReference: `testAccount::${uuid4()}`,
- *             workflowDefinition: {
- *                 key: 10011,
- *                 credentials: [
- *                     {
- *                         category: "ID",
- *                         country: {
- *                             predefinedType: "DEFINED",
- *                             values: ["USA", "CAN"]
- *                         },
- *                         type: {
- *                             predefinedType: "DEFINED",
- *                             values: ["DRIVING_LICENSE", "ID_CARD"]
- *                         }
- *                     }
- *                 ]
- *             },
- *             query: params.query ?? {},
- *         }
- */
 class AccountModel extends EntityModel_1.default {
     constructor(props = { model: APIAccountModel_1.default, entity: ApiAccount_1.default }) {
         super(props);

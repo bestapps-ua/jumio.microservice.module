@@ -13,6 +13,9 @@ interface IAccountRequest {
     mode: string;
     region: string;
     userAgent: string;
+    callbackUrl?: string;
+    successUrl?: string;
+    errorUrl?: string;
     customerInternalReference: string;
     workflowDefinition: {
         key: number;
