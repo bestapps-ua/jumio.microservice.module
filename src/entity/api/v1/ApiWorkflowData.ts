@@ -3,7 +3,6 @@ import ApiOauth from "./ApiOauth";
 
 class ApiWorkflowData extends ApiEntity {
 
-
     private _token: ApiOauth;
     private _capabilities: any;
     private _workflow: any;
