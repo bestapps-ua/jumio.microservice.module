@@ -15,8 +15,6 @@ interface IAccountRequest {
     region: string;
     userAgent: string;
     callbackUrl?: string;
-    successUrl?: string;
-    errorUrl?: string;
     customerInternalReference: string;
     workflowDefinition: {
         key: number;
