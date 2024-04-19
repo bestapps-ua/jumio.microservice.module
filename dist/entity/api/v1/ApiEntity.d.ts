@@ -2,6 +2,7 @@ declare class ApiEntity {
     private __type;
     private _created;
     private _data;
+    private _props;
     private _system;
     constructor(props: any);
     getClassName(): string;
@@ -12,6 +13,8 @@ declare class ApiEntity {
     get internalType(): string;
     get system(): Object;
     set system(value: Object);
+    get props(): Object;
+    set props(value: Object);
 }
 export default ApiEntity;
 //# sourceMappingURL=ApiEntity.d.ts.map

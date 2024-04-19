@@ -23,7 +23,7 @@ class AccountWorkflowModel extends AccountModel_1.default {
     workflowStatus(token, accountId, workflowExecutionId) {
         return __awaiter(this, void 0, void 0, function* () {
             let params = {
-                token: token.data,
+                token: token.props,
                 id: accountId,
                 workflowExecutionId,
             };
@@ -33,7 +33,7 @@ class AccountWorkflowModel extends AccountModel_1.default {
     workflowData(token, accountId, workflowExecutionId) {
         return __awaiter(this, void 0, void 0, function* () {
             let params = {
-                token: token.data,
+                token: token.props,
                 id: accountId,
                 workflowExecutionId,
             };
