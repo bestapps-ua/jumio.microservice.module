@@ -1,8 +1,13 @@
+import * as console from "console";
+import {name} from "ts-jest/dist/transformers/hoist-jest";
+
 class ApiEntity {
+
 
     private __type: string;
     private _created: number;
     private _data: Object;
+    private _props: Object;
     private _system: Object;
 
     constructor(props) {
@@ -11,6 +16,7 @@ class ApiEntity {
             this.__type = props._type;
             this._data = props.data || {};
             this._system = props._system;
+            this._props  = props;
         } catch (err) {
             console.log('[err init entity]', {err, name: this.getClassName()});
             throw err;
@@ -52,6 +58,13 @@ class ApiEntity {
         this._system = value;
     }
 
+    get props(): Object {
+        return this._props;
+    }
+
+    set props(value: Object) {
+        this._props = value;
+    }
 }
 
 export default ApiEntity;

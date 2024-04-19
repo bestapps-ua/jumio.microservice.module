@@ -13,7 +13,7 @@ class AccountWorkflowModel extends AccountModel {
 
     async workflowStatus(token: ApiOauth, accountId: string, workflowExecutionId: string): Promise<ApiWorkflowStatus> {
         let params = {
-            token: token.data,
+            token: token.props,
             id: accountId,
             workflowExecutionId,
         };
@@ -22,7 +22,7 @@ class AccountWorkflowModel extends AccountModel {
 
     async workflowData(token: ApiOauth, accountId: string, workflowExecutionId: string): Promise<ApiWorkflowData> {
         let params = {
-            token: token.data,
+            token: token.props,
             id: accountId,
             workflowExecutionId,
         };
