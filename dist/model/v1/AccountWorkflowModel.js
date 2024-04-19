@@ -14,6 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const AccountModel_1 = __importDefault(require("./AccountModel"));
 const ApiWorkflowStatus_1 = __importDefault(require("../../entity/api/v1/ApiWorkflowStatus"));
+const ApiWorkflowData_1 = __importDefault(require("../../entity/api/v1/ApiWorkflowData"));
 const STATUS_INITIATED = 'INITIATED';
 const STATUS_ACQUIRED = 'ACQUIRED';
 const STATUS_PROCESSED = 'PROCESSED';
@@ -27,7 +28,7 @@ class AccountWorkflowModel extends AccountModel_1.default {
                 id: accountId,
                 workflowExecutionId,
             };
-            return yield this.model.action('getWorkflowStatus', params);
+            return yield this.model.action('getWorkflowStatus', params, { entity: ApiWorkflowStatus_1.default });
         });
     }
     workflowData(token, accountId, workflowExecutionId) {
@@ -37,7 +38,7 @@ class AccountWorkflowModel extends AccountModel_1.default {
                 id: accountId,
                 workflowExecutionId,
             };
-            return yield this.model.action('getWorkflow', params);
+            return yield this.model.action('getWorkflow', params, { entity: ApiWorkflowData_1.default });
         });
     }
     isProcessed(data) {

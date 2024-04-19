@@ -17,7 +17,7 @@ class AccountWorkflowModel extends AccountModel {
             id: accountId,
             workflowExecutionId,
         };
-        return await this.model.action('getWorkflowStatus', params);
+        return await this.model.action('getWorkflowStatus', params, {entity: ApiWorkflowStatus});
     }
 
     async workflowData(token: ApiOauth, accountId: string, workflowExecutionId: string): Promise<ApiWorkflowData> {
@@ -26,7 +26,7 @@ class AccountWorkflowModel extends AccountModel {
             id: accountId,
             workflowExecutionId,
         };
-        return await this.model.action('getWorkflow', params);
+        return await this.model.action('getWorkflow', params, {entity: ApiWorkflowData});
     }
 
     isProcessed(data: ApiWorkflowStatus | ApiWorkflowData) {

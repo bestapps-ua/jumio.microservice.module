@@ -8,7 +8,7 @@ declare class APIEntityModel {
     set path(value: any);
     get entity(): ApiEntity;
     set entity(value: ApiEntity);
-    action(name: string, params?: any): Promise<any>;
+    action(name: string, params?: any, options?: any): Promise<any>;
     generate(): Promise<void>;
 }
 export default APIEntityModel;

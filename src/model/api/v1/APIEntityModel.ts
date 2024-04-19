@@ -30,7 +30,7 @@ class APIEntityModel {
         this._entity = value;
     }
 
-    async action(name: string, params: any = {}){
+    async action(name: string, params: any = {}, options: any = {}){
         let data: any = await APIModel.call(`${this.path}.${name}`, params);
         //console.log('DATA', data);
 
@@ -43,6 +43,15 @@ class APIEntityModel {
             data.data.items = items;
             return new ApiList(data.data);
         }
+
+        if(options.natural) {
+            return data.data;
+        }
+
+        if(options.entity) {
+            return new options.entity(data.data);
+        }
+
         //@ts-ignore
         return new this.entity(data.data);
     }

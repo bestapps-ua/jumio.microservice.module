@@ -31,7 +31,7 @@ class APIEntityModel {
     set entity(value) {
         this._entity = value;
     }
-    action(name, params = {}) {
+    action(name, params = {}, options = {}) {
         return __awaiter(this, void 0, void 0, function* () {
             let data = yield APIModel_1.default.call(`${this.path}.${name}`, params);
             //console.log('DATA', data);
@@ -43,6 +43,12 @@ class APIEntityModel {
                 }
                 data.data.items = items;
                 return new ApiList_1.default(data.data);
+            }
+            if (options.natural) {
+                return data.data;
+            }
+            if (options.entity) {
+                return new options.entity(data.data);
             }
             //@ts-ignore
             return new this.entity(data.data);
